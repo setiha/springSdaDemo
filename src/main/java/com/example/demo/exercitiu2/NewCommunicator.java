@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 @Configuration
 public class NewCommunicator {
 
-
+/*
     public NewCommunicator(ReaderOfFile readerOfFile, ReaderOfKeyBoard readerOfKeyBoard) {
         this.readerOfFile = readerOfFile;
         this.readerOfKeyBoard = readerOfKeyBoard;
@@ -25,6 +25,6 @@ public class NewCommunicator {
         String b = readerOfKeyBoard.readLine();
         System.out.println(a);
         System.out.println(b);
-    }
+    }*/
 }
 

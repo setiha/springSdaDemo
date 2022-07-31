@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 
 public class Communicator3 {
-    @Autowired
+    /*@Autowired
     GenericReader genericReader;
 
     @Scheduled(fixedDelay = 1000*60*10)
@@ -18,5 +18,5 @@ public class Communicator3 {
         if(genericReader.getClass().equals(ReadOfScanner.class)){
             System.out.println("Reader of scanner");
         }
-    }
+    }*/
 }
