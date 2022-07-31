@@ -6,17 +6,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Scheduled;
 
 @Configuration
-public class Communicator2 {
 
-   /* @Qualifier("SpecialFile")
+
+
+public class Communicator3 {
     @Autowired
     GenericReader genericReader;
 
-    @Autowired
-    ReadOfScanner readOfScanner;
-
-    @Scheduled(fixedDelay = 100 * 60 * 100)
-    public void suprimeReader(){
-        System.out.println(genericReader.read());
-    }*/
+    @Scheduled(fixedDelay = 1000*60*10)
+    public void readStuff(){
+        if(genericReader.getClass().equals(ReadOfScanner.class)){
+            System.out.println("Reader of scanner");
+        }
+    }
 }

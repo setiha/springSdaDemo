@@ -11,7 +11,7 @@ import java.io.IOException;
 @Configuration
 public class DummyFileExample {
 
-    @Scheduled(fixedDelay = 1000 * 60 * 10)
+   /* @Scheduled(fixedDelay = 1000 * 60 * 10)
     public String fileReadWriteExample() {
         try {
             FileReader reader = new FileReader("src/main/resources/read.txt");
@@ -27,5 +27,5 @@ public class DummyFileExample {
             throw new RuntimeException(e.getMessage());
         }
 
-    }
+    }*/
 }
