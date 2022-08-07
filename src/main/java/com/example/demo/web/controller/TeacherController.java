@@ -25,8 +25,8 @@ public class TeacherController {
             // http: //localhost:8080/api/students
             path = "/api/teachers")
     public ResponseEntity<List<Teacher>> getAllTeachers() {
-        List<Teacher> students = teacherRepository.findAll();
-        ResponseEntity<List<Teacher>> response = new ResponseEntity<>(students, HttpStatus.OK);
+        List<Teacher> teachers = teacherRepository.findAll();
+        ResponseEntity<List<Teacher>> response = new ResponseEntity<>(teachers, HttpStatus.OK);
         return response;
     }
 
