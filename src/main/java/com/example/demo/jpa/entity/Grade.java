@@ -1,5 +1,6 @@
 package com.example.demo.jpa.entity;
 
+
 import lombok.*;
 
 import javax.persistence.Column;
@@ -11,18 +12,15 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "student")
+@Entity(name = "grade")
 @ToString
-public class Student {
+public class Grade {
 
     @Id
     private  Integer id;
-
-    @Column(name = "first_name")
-    private String name;
-    private String lastName;
-    private LocalDate dateOfBirth;
-    private Integer classId;
-
+    private LocalDate date;
+    private Integer studentId;
+    private Integer teacherId;
+    private Integer subjectId;
 
 }
